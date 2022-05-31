@@ -1,14 +1,11 @@
 #importando la clase car al proyecto
 from car import Car 
+from account import Account
 
-car = Car();
-car.license = "AMS23"
-car.driver = "Carlos"
-car.passegenger = 2
-print(vars(car))
+if __name__ == "__main__":
 
-car2 = Car();
-car2.license = "QWR344"
-car2.driver = "Ivan"
-car2.passegenger = 3
-print(vars(car2))
+    print("Hola mundo")
+
+    car = Car("CU1123", Account("Carlos Solis", "65433"))
+    print(vars(car))
+    print(vars(car.driver))
