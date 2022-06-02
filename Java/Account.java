@@ -1,4 +1,5 @@
 class Account {
+    //Estos son atributos
     Integer id;
     String name;
     String document;
