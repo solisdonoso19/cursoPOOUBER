@@ -1,6 +1,8 @@
 from unicodedata import name
 from xml.dom.minidom import Document
 
+from django.forms import EmailInput
+
 
 class Account:
     id = int
@@ -9,6 +11,9 @@ class Account:
     email = str
     password = str
     
-    def __init__(self, name, document):
+    def __init__(self, id, name, document, email, password):
+        self.id = id
         self.name = name
         self.document = document
+        self.email = email
+        self.password = password
